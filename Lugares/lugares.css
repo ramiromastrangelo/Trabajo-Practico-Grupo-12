@@ -2,7 +2,7 @@
     --color-primario:   #1a2b4a;
     --color-acento:     #028090;
     --color-fondo:      #f7f9fa;
-    --color-texto:      #1a1a1a;
+    --color-texto:      #eeeeee;
     --color-texto-claro:#ffffff;
     --fuente-principal: "inter", sans-serif;
 }
@@ -16,6 +16,7 @@
 }
 
 body{
-    font-family: var(--fuente-principal)
+    font-family: var(--fuente-principal);
+    background-color: var(--color-primario)
 }
 /*salu2*/
