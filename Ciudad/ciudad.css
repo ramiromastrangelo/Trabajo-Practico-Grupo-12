@@ -19,4 +19,11 @@ body{
     font-family: var(--fuente-principal);
     background-color: var(--color-primario);
 }
-/*salu2*/
+/*Estilos para el body*/
+
+h1 {
+    text-align: center;
+    color: var(--color-texto-claro);
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
