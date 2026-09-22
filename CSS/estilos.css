@@ -44,10 +44,13 @@ body{
     font-size: 1.7rem;
     height: 100vh;
 }
-.menu-especial h2{
+.menu-especial a{
     padding: 7px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 2.5rem;
 }
-.menu-especial h2:hover{
+.menu-especial a:hover{
     color: var(--color-texto-menu-hover);
 
 }
@@ -69,3 +72,4 @@ body{
     border-radius: 10px;
    
 }
+
