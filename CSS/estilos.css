@@ -110,4 +110,29 @@ body {
 }
 
 
+.contenedor-seccion {
+    max-width: 800px;      
+    margin: 40px auto;     
+    font-family: sans-serif;
+}
+
+.contenedor-seccion h2 {
+    font-size: 2rem;
+    color: #222;           
+    margin-bottom: 15px;   
+}
+
+.contenedor-seccion p {
+    font-size: 1.1rem;
+    line-height: 1.6;      
+    margin-bottom: 15px;   
+}
+
+/* Estilo para el link */
+.contenedor-seccion a {
+    color: #0066cc;        
+    font-weight: bold;
+}
+
+
 
