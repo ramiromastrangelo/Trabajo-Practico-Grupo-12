@@ -133,6 +133,10 @@ body {
     color: #0066cc;        
     font-weight: bold;
 }
-
+/* distancia entre la imagen y el titulo "nuestras oficinas" */
+.seccion-contacto h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
 
