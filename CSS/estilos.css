@@ -156,18 +156,36 @@ body {
 
 
 /*Parte "lugares.html"*/
-.lugares-titulo-container {
+.lugares-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 4rem;
-    margin-left: 1rem;
-
+    padding: 1rem
+}
+.lugares-container-titulo {
+ 
     font-size: 2rem;
 }
-.lugares-subtitulo-container {
-    margin-top: 20px; 
-    font-size: 1rem;
+.lugares-container-subtitulo {
+    font-size: 1rem; 
+}
+.lugares-container-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 1rem;
+}
+.lugares-container-imagenes img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--color-primario);
+}
+.lugares-container img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 
