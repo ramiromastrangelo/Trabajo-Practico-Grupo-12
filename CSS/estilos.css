@@ -78,13 +78,28 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    color: var(--color-texto-claro);
 }
 
 .menu-superior {
     display: flex;
     justify-content: center; 
     gap: 30px;               
-    padding: 20px;
+    padding: 15px;
+    background-color: var(--color-primario);
+    border-bottom: 5px solid var(--color-secundario);
+}
+.menu-superior a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+.menu-superior a:hover {
+    background-color: var(--color-secundario);
+  
 }
 
 .menu-superior a {
@@ -140,3 +155,34 @@ body {
 }
 
 
+/*Parte "lugares.html"*/
+.lugares-titulo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 4rem;
+    margin-left: 1rem;
+
+    font-size: 2rem;
+}
+.lugares-subtitulo-container {
+    margin-top: 20px; 
+    font-size: 1rem;
+}
+
+
+/* .animacion-titulo {
+    animation: alternarEstilo 2s steps(1) infinite;
+}
+
+.lugares-subtitulo-container {
+    margin-top: 20px;
+    color: var(--color-texto-claro);
+    font-size: 1rem;
+}
+@keyframes alternarEstilo {
+    0%, 100% {font-style: normal; }
+    50% {   font-style: var(--fuente-menu);
+            color: var(--color-texto-menu-hover);
+            background-color: var(--color-fondo-menu);}
+} */
