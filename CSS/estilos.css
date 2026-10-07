@@ -204,3 +204,52 @@ body {
             color: var(--color-texto-menu-hover);
             background-color: var(--color-fondo-menu);}
 } */
+/* 1. Fondo general exclusivo para la página de contactos */
+body.pagina-contacto {
+  margin: 0;
+  background-color: #2e4a36; 
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* 2. Barra superior negra completa exclusiva para contactos */
+.pagina-contacto header {
+  background-color: #1e1e1e; 
+  padding: 1px 0;
+  width: 100%;
+}
+
+/* 3. Menú de navegación centrado exclusivo para contactos */
+.pagina-contacto header nav ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: center; 
+  gap: 35px; 
+}
+
+/* 4. Estilo de los enlaces del menú exclusivo para contactos */
+.pagina-contacto header nav ul li a {
+  color: #ffffff;
+  text-decoration: none; 
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.pagina-contacto header nav ul li a:hover {
+  color: #cccccc; 
+}
+
+/* 5. Cartel/Caja del título principal con bordes exclusivo para contactos */
+.pagina-contacto h1 {
+  background-color: #1e1e1e; 
+  text-align: center;
+  max-width: 850px; 
+  margin: 30px auto 20px auto; 
+  padding: 15px 25px;
+  border: 2px solid #4a5d4e; 
+  border-radius: 12px; 
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
