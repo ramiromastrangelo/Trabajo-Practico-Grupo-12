@@ -173,15 +173,14 @@ body {
 .lugares-container-imagenes {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2rem;
     margin-top: 1rem;
 }
 .lugares-container-imagenes img {
     width: 100%;
-    max-width: 300px;
+    max-width: 19rem;
     height: auto;
     border-radius: 10px;
-    background-color: var(--color-primario);
 }
 .lugares-container img:hover {
     transform: scale(1.05);
