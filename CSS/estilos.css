@@ -155,12 +155,12 @@ body {
 }
 
 
-/*Parte "lugares.html"*/
+/*INICIO PARTE "lugares.html"*/
 .lugares-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding: 1rem
 }
 .lugares-container-titulo {
@@ -170,22 +170,83 @@ body {
 .lugares-container-subtitulo {
     font-size: 1rem; 
 }
-.lugares-container-imagenes {
+.lugares-container-imagenes-padre {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 1rem;
 }
-.lugares-container-imagenes img {
+.lugares-container-imagenes-hijos{
+             display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+}
+.lugares-container-imagenes-hijos-texto{
+        position: absolute;
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0;
+        z-index: 1;
+        font-family:  "inter", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: inherit;
+        
+        border-radius:10px ;
+}
+.lugares-container-imagenes-hijos-texto:hover{
+      transform: scale(1.05);
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 4px solid blueviolet;
+    transition: opacity 0.3s ease, transform 0.3s ease, border-radius 0.3s ease;
+
+}
+.lugares-container-imagenes-hijos img {
     width: 100%;
     max-width: 19rem;
-    height: auto;
+    height: 16rem;
     border-radius: 10px;
 }
+
 .lugares-container img:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
+    
 }
+.lugares-seccion-LasVenturas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    z-index: 2; 
+     transition: transform 0.5s ease-in-out;
+}
+.lugares-seccion-LasVenturas:target{
+    transform: translateX(-0%);
+    transition: transform 0.5s ease-in-out;
+}
+.volver-link:target{
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
 
 
 /* .animacion-titulo {
@@ -203,6 +264,9 @@ body {
             color: var(--color-texto-menu-hover);
             background-color: var(--color-fondo-menu);}
 } */
+ 
+/*FIN PARTE LUGARES "lugares.html"*/
+
 /* 1. Fondo general exclusivo para la página de contactos */
 body.pagina-contacto {
   margin: 0;
