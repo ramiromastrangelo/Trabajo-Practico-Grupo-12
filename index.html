@@ -13,10 +13,11 @@
         <a href="contactos.html">Contactos</a>
     </nav>
 
-    <header class="hero">
-        <h1>Bienvenidos a San Andreas</h1>
-        <img src="Repositoriodeimagenes/san-andreas-sin-fondo.png" alt="Ícono de San Andreas" class="icono-centrado">
-    </header>
+    <div class="hero-index">
+        <h1 class="titulo-principal">Bienvenidos a San Andreas</h1>
+        <img src="Repositoriodeimagenes/san-andreas-sin-fondo.png" alt="Logo de San Andreas" class="logo-principal">
+        <a href="#ciudad" class="boton-primario">Explorar el Estado</a>
+    </div>
 
     <main>
         <section id="ciudad" class="contenedor-seccion">
@@ -41,15 +42,20 @@
         </section>
         
         <section id="lugares" class="contenedor-seccion seccion-alternalterna">
-            <img src="img/icono-san-andreas.png" alt="Ícono de San Andreas Decorativo" class="icono-centrado icono-pequeno">
             <h2>Lugares y Entornos</h2>
-            <ul>
-                <li>La región del campo, conocida como The Badlands, se ubica al sur y oeste del mapa, rodeando el monte más alto del juego: el Mount Chiliad.</li>
-                <li>En esta zona rural predominan los bosques densos, llanuras agrícolas y pueblos clave como Palomino Creek y Angel Pine.</li>
-                <li>La región del desierto, situada en la mitad norte del estado, se caracteriza por sus cañones rocosos y formaciones de piedra caliza.</li>
-                <li>En el desierto se encuentran instalaciones de alta seguridad, como el Área 69 y la monumental central hidroeléctrica Presa Sherman.</li>
-            </ul>
-            <p>Para informarte más de nuestros hermosos lugares, ir a este link de <a href="lugares.html">Lugares</a>.</p>
+            <div class="columnas-lugares">
+                <div class="columna-imagen">
+                    <img src="Repositoriodeimagenes/ciudad-las-venturas.jpg" alt="Paisaje de San Andreas" class="imagen-lugares">
+                </div>
+                <div class="columna-texto">
+                    <ul>
+                        <li>La región del campo, conocida como The Badlands, se ubica al sur y oeste del mapa, rodeando el monte más alto del juego: el Mount Chiliad.</li>
+                        <li>En esta zona rural predominan los bosques densos, llanuras agrícolas y pueblos clave como Palomino Creek y Angel Pine.</li>
+                        <li>La región del desierto, situada en la mitad norte del estado, se caracteriza por sus cañones rocosos y formaciones de piedra caliza.</li>
+                        <li>En el desierto se encuentran instalaciones de alta seguridad, como el Área 69 y la monumental central hidroeléctrica Presa Sherman.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         
         <section id="contactos" class="contenedor-seccion">
