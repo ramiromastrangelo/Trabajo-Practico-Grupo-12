@@ -349,55 +349,6 @@ ul li {
  
 /*FIN PARTE LUGARES "lugares.html"*/
 
-/* 1. Fondo general exclusivo para la página de contactos */
-body.pagina-contacto {
-  margin: 0;
-  background-color: #2e4a36; 
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-}
-
-/* 2. Barra superior negra completa exclusiva para contactos */
-.pagina-contacto header {
-  background-color: #1e1e1e; 
-  padding: 1px 0;
-  width: 100%;
-}
-
-/* 3. Menú de navegación centrado exclusivo para contactos */
-.pagina-contacto header nav ul {
-  list-style: none; 
-  margin: 0;
-  padding: 0;
-  display: flex; 
-  justify-content: center; 
-  gap: 35px; 
-}
-
-/* 4. Estilo de los enlaces del menú exclusivo para contactos */
-.pagina-contacto header nav ul li a {
-  color: #ffffff;
-  text-decoration: none; 
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.pagina-contacto header nav ul li a:hover {
-  color: #cccccc; 
-}
-
-/* 5. Cartel/Caja del título principal con bordes exclusivo para contactos */
-.pagina-contacto h1 {
-  background-color: #1e1e1e; 
-  text-align: center;
-  max-width: 850px; 
-  margin: 30px auto 20px auto; 
-  padding: 15px 25px;
-  border: 2px solid #4a5d4e; 
-  border-radius: 12px; 
-  font-size: 2rem;
-  letter-spacing: 0.5px;
-}
 
 /* INICIO PARTE - "ciudades.html"*/
 
@@ -588,4 +539,169 @@ body.pagina-contacto {
 .columna-texto li {
     margin-bottom: 15px;
     line-height: 1.5;
+}
+/* Fondo general exclusivo para la página de contactos */
+body.pagina-contacto {
+  margin: 0;
+  background-color: #2e4a36; 
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Barra superior negra completa exclusiva para contactos */
+.pagina-contacto header {
+  background-color: #1e1e1e; 
+  padding: 1px 0;
+  width: 100%;
+}
+
+/* Menú de navegación centrado exclusivo para contactos */
+.pagina-contacto header nav ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: center; 
+  gap: 35px; 
+}
+
+/* Estilo de los enlaces del menú exclusivo para contactos */
+.pagina-contacto header nav ul li a {
+  color: #ffffff;
+  text-decoration: none; 
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.pagina-contacto header nav ul li a:hover {
+  color: #cccccc; 
+}
+
+/* Cartel/Caja del título principal con bordes exclusivo para contactos */
+.pagina-contacto h1 {
+  background-color: #1e1e1e; 
+  text-align: center;
+  max-width: 850px; 
+  margin: 30px auto 20px auto; 
+  padding: 15px 25px;
+  border: 2px solid #4a5d4e; 
+  border-radius: 12px; 
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.pagina-contacto .hero-contacto {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Repositoriodeimagenes/contacto.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    /* Le da un alto proporcionalde la altura de la pantalla */
+    height: 60vh; 
+    min-height: 450px; /* Asegura un alto mínimo en pantallas chicas */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+/* Títulos centrados superiores */
+.pagina-contacto .titulo-seccion {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.pagina-contacto .subtitulo-seccion {
+    text-align: center;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+/* Contenedor principal en 2 columnas */
+.pagina-contacto .contenedor-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    gap: 40px; /* Espacio de separación entre las dos columnas */
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+}
+
+/* Columna Izquierda (Informacion) */
+.pagina-contacto .datos-contacto {
+    font-style: normal;
+    text-align: left;
+}
+
+.pagina-contacto .datos-contacto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.pagina-contacto .bloque-info {
+    margin-bottom: 20px;
+}
+
+.pagina-contacto .bloque-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+}
+
+.pagina-contacto .bloque-info p {
+    margin: 3px 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Columna Derecha (Formulario) */
+.pagina-contacto .formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.pagina-contacto .nota-formulario {
+    font-size: 0.85rem;
+    color: #aaaaaa;
+    margin-bottom: 10px;
+}
+
+.pagina-contacto .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pagina-contacto .campo label {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.pagina-contacto .campo input,
+.pagina-contacto .campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4a5d4e;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.pagina-contacto .btn-enviar {
+    padding: 12px;
+    background-color: #4a5d4e;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pagina-contacto .btn-enviar:hover {
+    background-color: #5c7462;
 }

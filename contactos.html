@@ -7,40 +7,77 @@
     <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 <body class="pagina-contacto">
-<header>
-    <h1>Contacto - Los Santos</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="ciudad.html">Ciudad</a></li>
-            <li><a href="lugares.html">Lugares</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-     <address class="datos-contacto">
-            <h3>Información Directa</h3>
-            <p> Dirección: Calle Principal 123</p>
-            <p> Teléfono: (123) 456-7890</p>
-            <p> Correo Electrónico: info@lossantos.com</p>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ciudad.html">Ciudad</a></li>
+                <li><a href="lugares.html">Lugares</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PORTADA HERO (Banner principal con la imagen de fondo) -->
+    <section class="hero-contacto">
+        <h1>Contacto - Los Santos</h1>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+    <h2 class="titulo-seccion">Información de Contacto</h2>
+    <p class="subtitulo-seccion">¡Contáctanos para más información!</p>
+
+    <!-- CONTENEDOR EN 2 COLUMNAS -->
+    <div class="contenedor-contacto">
+        
+        <!-- Columna Izquierda: Datos de contacto -->
+        <address class="datos-contacto">
+            <h3>¿Cómo podemos ayudarte?</h3>
+            
+            <div class="bloque-info">
+                <h4>Atención Directa</h4>
+                <p>Visita nuestras oficinas centrales en el centro de Los Santos.</p>
+                <p><strong>Dirección:</strong> Calle Principal 123</p>
+            </div>
+
+            <div class="bloque-info">
+                <h4>Teléfono de Contacto</h4>
+                <p>Llámanos para consultas e informes inmediatos.</p>
+                <p><strong>Teléfono:</strong> (123) 456-7890</p>
+            </div>
+
+            <div class="bloque-info">
+                <h4>Correo Electrónico</h4>
+                <p>Escríbenos para presupuestos y soporte técnico.</p>
+                <p><strong>Email:</strong> info@lossantos.com</p>
+            </div>
         </address>
 
-        <h3>Nuestras Oficinas</h3>
-              <img src="Repositoriodeimagenes/contacto.jpg" alt="Contacto.jpg" height="700">
+        <!-- Columna Derecha: Formulario -->
+        <form class="formulario-contacto" action="enviar_contacto.php" method="post">
+            <p class="nota-formulario">Todos los campos son obligatorios.</p>
 
-        <h2>Información de Contacto</h2>
-      <p>¡Contáctanos para más información!</p>
-      <form action="enviar_contacto.php" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+            <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
 
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required>
+            <div class="campo">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
 
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+
+    </div>
+</main>
+
+</body>
+</html>
