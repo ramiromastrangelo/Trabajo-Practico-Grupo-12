@@ -406,7 +406,7 @@ body.pagina-contacto {
 /* INICIO PARTE - "ciudades.html"*/
 
 .tabla-datos {
-    width: 100%;
+    width: 90%;
     margin: 20px 0;
     border-collapse: collapse;
     font-family: sans-serif;
@@ -417,7 +417,9 @@ body.pagina-contacto {
 }
 
 /* Encabezados de columna y fila - "ciudades.html" */
-
+.seccion-ciudad{
+    text-align: center;
+}
 .tabla-datos th {
     color: var(--color-texto-claro);
     padding: 12px;
