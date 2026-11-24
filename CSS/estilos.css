@@ -1096,6 +1096,8 @@ body.pagina-ciudades {
 
 /* FIN PARTE - "ciudades.html" */
 
+
+/* INICIO PARTE - "contactos.html" */
 /* Fondo general exclusivo para la página de contactos */
 body.pagina-contacto {
   margin: 0;
@@ -1107,7 +1109,7 @@ body.pagina-contacto {
 /* Barra superior negra completa exclusiva para contactos */
 .pagina-contacto header {
   background-color: #1e1e1e; 
-  padding: 1px 0;
+  padding: 20px 0;
   width: 100%;
 }
 
@@ -1126,7 +1128,7 @@ body.pagina-contacto {
   color: #ffffff;
   text-decoration: none; 
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .pagina-contacto header nav ul li a:hover {
@@ -1275,6 +1277,7 @@ body.pagina-contacto {
     gap: 30px;
   }
 }
+/* FIN PARTE - "contactos.html" */
 
 /* INICIO PARTE - "ciudades.html" */
 .tabla-datos {
