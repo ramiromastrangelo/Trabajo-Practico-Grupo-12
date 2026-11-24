@@ -2,13 +2,6 @@
     font-family: "Gta-menu-font";
     src: url("../Tipografias/Bank-Gothic-Font/BankGothicLtBTLight.ttf") format("truetype");
 }
-:root{/*Parte Especial del menu especial*/
-    --color-fondo-menu: #010101;
-    --color-texto-menu: #5C677C;
-    --color-texto-menu-hover: #AED6F9;
-    --fuente-menu: "Gta-menu-font";
-}
-
 :root{ /* Todo Esto es a Definir Segun que paleta de colores nos convenga*/
     --color-primario:   #28282b;
     --color-secundario: #555d50;
@@ -26,42 +19,25 @@
     margin: 0;
     padding: 0;
     color: var(--color-texto-claro)!important;
+    scroll-behavior: smooth;
+}
+html {
+    scroll-padding-top: 70px; /* Ajusta este número a la altura de tu barra + un poco de aire */
+    scroll-behavior: smooth;  /* Opcional: hace que el desplazamiento sea animado */
+}
+header{
+    z-index: 1500;
 }
 /*Estilos para el body*/
 body{
     font-family: var(--fuente-principal);
     background-color: var(--color-fondo);
-}
-/*Estilos para el menu especial*/
-.menu-especial{
-    background-color: var(--color-fondo-menu);
-    color: var(--color-texto-menu);
-    font-family: var(--fuente-menu);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    font-size: 1.7rem;
-    height: 100vh;
-}
-.menu-especial a{
-    padding: 7px;
-    text-decoration: none;
-    color: inherit;
-    font-size: 2.5rem;
-}
-.menu-especial a:hover{
-    color: var(--color-texto-menu-hover);
+   padding-top: 3rem;
 
 }
-.logo{
-    width: 100%;
-    height: 210px;
-    position: absolute;
-    top: 0;
+.modo-oscuro{
+    background: #1a1a1a;
 }
-/*Fin Estilos para el menu especial*/
 .ciudad-h1{
     background-color: var(--color-primario);
     border: var(--color-secundario) 5px solid;
@@ -177,9 +153,9 @@ body{
 /* Dos Columnas Lugares */
 .columnas-lugares {
     display: flex;
+    flex-direction: column;
     gap: 30px;
     align-items: center;
-    flex-direction: column;
     margin-top: 30px;
 }
 .columna-imagen {
@@ -1095,53 +1071,48 @@ body.pagina-ciudades {
 }
 
 /* FIN PARTE - "ciudades.html" */
-
-
-/* INICIO PARTE - "contactos.html" */
-/* Fondo general exclusivo para la página de contactos */
+/* =========================================================
+   ESTILOS EXCLUSIVOS PARA CONTACTOS (contactos.html)
+   ========================================================= */
 body.pagina-contacto {
   margin: 0;
-  background-color: #2e4a36; 
+  background-color: #2e4a36;
   color: #ffffff;
   font-family: Arial, sans-serif;
 }
 
-/* Barra superior negra completa exclusiva para contactos */
 .pagina-contacto header {
-  background-color: #1e1e1e; 
-  padding: 20px 0;
+  background-color: #1e1e1e;
+  padding: 1px 0;
   width: 100%;
 }
 
-/* Menú de navegación centrado exclusivo para contactos */
 .pagina-contacto header nav ul {
-  list-style: none; 
+  list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; 
-  justify-content: center; 
-  gap: 35px; 
+  display: flex;
+  justify-content: center;
+  gap: 35px;
 }
 
-/* Estilo de los enlaces del menú exclusivo para contactos */
 .pagina-contacto header nav ul li a {
   color: #ffffff;
-  text-decoration: none; 
+  text-decoration: none;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .pagina-contacto header nav ul li a:hover {
-  color: #cccccc; 
+  color: #cccccc;
 }
 
-/* Portada Hero con imagen de fondo (Los Santos) */
 .pagina-contacto .hero-contacto {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Repositoriodeimagenes/contacto.jpg");
   background-size: cover;
   background-position: center;
-  height: 60vh; 
-  min-height: 450px; 
+  height: 60vh;
+  min-height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1149,14 +1120,12 @@ body.pagina-contacto {
   text-align: center;
 }
 
-/* Título principal dentro de la portada Hero */
 .pagina-contacto .hero-contacto h1 {
   font-size: 2.8rem;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Títulos centrados superiores de la sección de contenidos */
 .pagina-contacto .titulo-seccion {
   text-align: center;
   font-size: 2rem;
@@ -1164,7 +1133,6 @@ body.pagina-contacto {
   margin-bottom: 5px;
 }
 
-/* Subtítulo centrado debajo de "Información de Contacto" */
 .pagina-contacto .titulo-seccion + p,
 .pagina-contacto .subtitulo-seccion {
   text-align: center;
@@ -1174,7 +1142,6 @@ body.pagina-contacto {
   margin-bottom: 35px;
 }
 
-/* Contenedor Padre de las 2 Columnas (Centrado y Prolijo) */
 .pagina-contacto .contenedor-contacto {
   display: flex;
   justify-content: space-between;
@@ -1185,13 +1152,11 @@ body.pagina-contacto {
   padding: 0 20px;
 }
 
-/* Hace que ambas columnas ocupen exactamente la mitad cada una */
 .pagina-contacto .datos-contacto,
 .pagina-contacto .formulario-contacto {
   flex: 1;
 }
 
-/* Columna Izquierda (Información de Contacto) */
 .pagina-contacto .datos-contacto {
   font-style: normal;
   text-align: left;
@@ -1218,7 +1183,6 @@ body.pagina-contacto {
   line-height: 1.4;
 }
 
-/* Columna Derecha (Formulario) */
 .pagina-contacto .formulario-contacto {
   display: flex;
   flex-direction: column;
@@ -1270,35 +1234,60 @@ body.pagina-contacto {
   background-color: #5c7462;
 }
 
-/* Responsivo: en celulares vuelve a ponerse una debajo de la otra */
 @media (max-width: 768px) {
   .pagina-contacto .contenedor-contacto {
     flex-direction: column;
     gap: 30px;
   }
 }
-/* FIN PARTE - "contactos.html" */
 
-/* INICIO PARTE - "ciudades.html" */
-.tabla-datos {
-  width: 90%;
-  margin: 20px 0;
-  border-collapse: collapse;
-  font-family: sans-serif;
-  background-color: var(--color-primario);
-  border: 4px solid var(--color-secundario);
-  border-radius: 8px;
-  overflow: hidden;
+/* MODO OSCURO GLOBAL (TODAS LAS SECCIONES) */
+
+body.modo-oscuro,
+body.oscuro,
+body.modo-oscuro.pagina-contacto,
+body.oscuro.pagina-contacto {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
 }
 
-/* Encabezados de columna y fila - "ciudades.html" */
-.seccion-ciudad {
-  text-align: center;
+/* Bloque verde del título (Hero) y Lugares y Entornos */
+body.modo-oscuro .hero-index,
+body.oscuro .hero-index,
+body.modo-oscuro .seccion-alternalterna,
+body.oscuro .seccion-alternalterna {
+    background-color: #1a1a1a !important;
+    border: 1px solid #333333;
 }
 
-.tabla-datos th {
-  color: var(--color-texto-claro);
-  padding: 12px;
-  text-align: left;
-  font-weight: bold;
+/* Tarjetas de Ciudades, Curiosidades y Artículos */
+body.modo-oscuro .tarjeta-ciudad,
+body.oscuro .tarjeta-ciudad,
+body.modo-oscuro .pagina-ciudades .seccion-ciudad,
+body.oscuro .pagina-ciudades .seccion-ciudad,
+body.modo-oscuro .curiosidad,
+body.oscuro .curiosidad,
+body.modo-oscuro .lugares-article,
+body.oscuro .lugares-article {
+    background-color: #1e1e20 !important;
+    border-color: #3a3a3d !important;
+}
+
+/* Botones de Contacto y del Index */
+body.modo-oscuro .pagina-contacto .btn-enviar,
+body.oscuro .pagina-contacto .btn-enviar,
+body.modo-oscuro .boton-primario,
+body.oscuro .boton-primario,
+body.modo-oscuro .boton-secundario,
+body.oscuro .boton-secundario {
+    background-color: #2a2a2d !important;
+    border: 1px solid #555555 !important;
+}
+
+/* Footer */
+body.modo-oscuro .footer-principal,
+body.oscuro .footer-principal,
+body.modo-oscuro .pagina-ciudades footer,
+body.oscuro .pagina-ciudades footer {
+    background-color: #0b0b0c !important;
 }

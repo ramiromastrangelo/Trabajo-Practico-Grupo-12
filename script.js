@@ -1,18 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-  //
-  const botonModoOscuro = document.getElementById("btn-modo");
-  if (botonModoOscuro) {
-    botonModoOscuro.addEventListener("click", () => {
-      document.body.classList.toggle("modo-oscuro");
-      if (document.body.classList.contains("modo-oscuro")) {
-        botonModoOscuro.textContent = "Modo Claro";
-      } else {
-        botonModoOscuro.textContent = "Modo Oscuro";
+  const botonModo = document.getElementById("btn-modo");
+  if (localStorage.getItem("modoOscuro") === "activado") {
+      document.body.classList.add("oscuro");
+      if (botonModo) {
+          botonModo.textContent = "Modo Claro";
       }
-    });
   }
-            //JS EN CONTACTOS//
-  // VALIDACIÓN Y ENVÍO DEL FORMULARIO
+  if (botonModo) {
+      botonModo.addEventListener("click", () => {
+          document.body.classList.toggle("oscuro");
+
+          if (document.body.classList.contains("oscuro")) {
+              botonModo.textContent = "Modo Claro";
+              localStorage.setItem("modoOscuro", "activado");
+          } else {
+              botonModo.textContent = "Modo Oscuro";
+              localStorage.setItem("modoOscuro", "desactivado");
+          }
+      });
+  }
+
+  // --- VALIDACIÓN Y ENVÍO DEL FORMULARIO ---
   const formulario = document.querySelector(".formulario-contacto");
   if (formulario) {
     const mensajeEstado = document.createElement("p");
@@ -62,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  //  COPIAR TELÉFONO O EMAIL CON UN CLIC 
+  // --- COPIAR TELÉFONO O EMAIL CON UN CLIC ---
   const datosCopiables = document.querySelectorAll(".dato-copiable");
   datosCopiables.forEach((elemento) => {
     elemento.style.cursor = "pointer";
@@ -85,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  //  INDICADOR DE ESTADO DE ATENCIÓN 
+  // --- INDICADOR DINÁMICO DE ESTADO DE ATENCIÓN ---
   const estadoAtencion = document.getElementById("estado-atencion");
   if (estadoAtencion) {
     const ahora = new Date();
