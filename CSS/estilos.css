@@ -22,8 +22,8 @@
     scroll-behavior: smooth;
 }
 html {
-    scroll-padding-top: 70px; /* Ajusta este número a la altura de tu barra + un poco de aire */
-    scroll-behavior: smooth;  /* Opcional: hace que el desplazamiento sea animado */
+    scroll-padding-top: 70px; 
+    scroll-behavior: smooth; 
 }
 header{
     z-index: 1500;
@@ -231,14 +231,17 @@ body{
     font-size: 0.9rem;
 }
 .boton-primario:hover {
-    background-color: #ffffff;
-    color: var(--color-primario);
+    background-color:  var(--color-secundario);
+    color: var(--color-texto);
+    box-shadow: 0 0 12px rgba(85, 93, 80, 0.9);
     border-color: #ffffff;
+    transform: translateY(-2px);
 }
 .boton-secundario:hover {
     background-color: var(--color-secundario);
     color: #ffffff;
     box-shadow: 0 0 12px rgba(85, 93, 80, 0.9);
+    border-color: #ffffff;
     transform: translateY(-2px);
 }
 /* Footer Index */
