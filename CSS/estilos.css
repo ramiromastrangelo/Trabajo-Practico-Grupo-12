@@ -1079,6 +1079,7 @@ body.pagina-ciudades {
    ========================================================= */
 body.pagina-contacto {
   margin: 0;
+  padding-top: 0;
   background-color: #2e4a36;
   color: #ffffff;
   font-family: Arial, sans-serif;
@@ -1086,8 +1087,32 @@ body.pagina-contacto {
 
 .pagina-contacto header {
   background-color: #1e1e1e;
-  padding: 1px 0;
+  padding: 0;
   width: 100%;
+}
+
+/* 1) Agranda el margen/barra negra superior */
+.pagina-contacto .menu-superior {
+  padding: 22px 20px;
+  border-bottom: 5px solid var(--color-secundario);
+}
+
+/* 2) Agranda las letras blancas: San Andreas, Modo Oscuro, Index, Ciudades, Lugares y Contactos */
+.pagina-contacto .menu-superior .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.pagina-contacto .menu-superior #btn-modo {
+  font-size: 1.05rem;
+  padding: 6px 14px;
+}
+
+.pagina-contacto .menu-superior .nav-link,
+.pagina-contacto header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .pagina-contacto header nav ul {
@@ -1099,15 +1124,13 @@ body.pagina-contacto {
   gap: 35px;
 }
 
-.pagina-contacto header nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
 .pagina-contacto header nav ul li a:hover {
   color: #cccccc;
+}
+
+/* 3) Pega la imagen justo debajo de la barra negra sin franja verde */
+.pagina-contacto #contactos {
+  margin-top: 93px !important;
 }
 
 .pagina-contacto .hero-contacto {
@@ -1243,7 +1266,6 @@ body.pagina-contacto {
     gap: 30px;
   }
 }
-
 /* MODO OSCURO GLOBAL (TODAS LAS SECCIONES) */
 
 body.modo-oscuro,
