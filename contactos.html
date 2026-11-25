@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>San Andreas - Contacto</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/estilos.css">
+    </head>
+    <body class="pagina-contacto">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark menu-superior fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold" href="index.html">San Andreas</a>
+                    <button id="btn-modo" class="btn btn-outline-light btn-sm ms-auto me-2">Modo Oscuro</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav gap-lg-3">
+                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Index</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="ciudades.html">Ciudades</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="lugares.html">Lugares</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="contactos.html">Contactos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="pagina-contacto" id="contactos" style="margin-top: 60px;">
+                <div class="hero-contacto">
+                    <h1>Contacto - Los Santos</h1>
+                </div>
+                <article>
+                    <h2 class="titulo-seccion">Información de Contacto</h2>
+                    <p class="subtitulo-seccion">¡Contáctanos para más información!</p>
+
+                    <div class="contenedor-contacto">
+                        <address class="datos-contacto">
+                            <h3>¿Cómo podemos ayudarte?</h3>
+
+                            <div class="bloque-info">
+                                <h4>Atención Directa</h4>
+                                <p>Visita nuestras oficinas centrales en el centro de Los Santos.</p>
+                                <p><strong>Dirección:</strong> Calle Principal 123</p>
+                                <p id="estado-atencion"></p>
+                            </div>
+
+                            <div class="bloque-info">
+                                <h4>Teléfono de Contacto</h4>
+                                <p>Llámanos para consultas e informes inmediatos.</p>
+                                <p>
+                                    <strong>Teléfono:</strong> 
+                                    <span class="dato-copiable" title="Haz clic para copiar">(123) 456-7890</span>
+                                </p>
+                            </div>
+
+                            <div class="bloque-info">
+                                <h4>Correo Electrónico</h4>
+                                <p>Escríbenos para presupuestos y soporte técnico.</p>
+                                <p>
+                                    <strong>Email:</strong> 
+                                    <span class="dato-copiable" title="Haz clic para copiar">info@lossantos.com</span>
+                                </p>
+                            </div>
+                        </address>
+                        <form class="formulario-contacto" novalidate>
+                            <p class="nota-formulario">Todos los campos son obligatorios.</p>
+
+                            <div class="campo">
+                                <label for="nombre">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+
+                            <div class="campo">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="campo">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-enviar">Enviar</button>
+                        </form>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer class="footer-principal text-center py-4">
+                <p><strong>Contacto Rápido:</strong> Calle Principal 123, Los Santos | <a href="mailto:info@lossantos.com" class="enlace-contacto">info@lossantos.com</a> | <a href="tel:+1234567890" class="enlace-contacto">(123) 456-7890</a></p>
+                <p>&copy; 2026 Estado de San Andreas. Desarrollado por el Dream Team.</p>
+                <p>
+                    <a href="https://www.rockstargames.com" target="_blank" rel="noopener noreferrer" class="enlace-contacto">
+                        Sitio oficial de Rockstar Games &rarr;
+                    </a>
+                </p>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="js/script.js"></script>  
+    </body>
+</html>
